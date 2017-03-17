@@ -1,0 +1,11 @@
+#!/usr/bin/env ruby
+
+def exe(cmd)
+   system cmd
+   sleep 1
+   exe cmd
+end
+
+exe ARGV.join(" ")
+
+
